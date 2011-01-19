@@ -1,0 +1,17 @@
+--- 
+- :name: bottle of perfume
+  :category: BEAUTY
+  :price: "27.99"
+  :imported: true
+- :name: bottle of perfume
+  :category: BEAUTY
+  :price: "18.99"
+  :imported: false
+- :name: packet of headache pills
+  :category: MEDICAL
+  :price: "9.75"
+  :imported: false
+- :name: box of chocolates
+  :category: FOOD
+  :price: "11.25"
+  :imported: true
