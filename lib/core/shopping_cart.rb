@@ -2,11 +2,18 @@ require File.join( Rcli.script_root,'lib','core','nickel_rounding.rb' )
 require File.join( Rcli.script_root,'lib','core','product.rb' )
 
 class ShoppingCart
+  # constructor expects an array of hashes with the following 
+  # properties per-product:
+  #    :name      (String)
+  #    :category  (String, any of: BOOKS FOOD DIGITAL_MEDIA BEAUTY MEDICAL )
+  #    :price     (Float)
+  #    :imported  (Boolean)
   def initialize(products = nil)
     @products = []
 
-    @subtotal = 0.00
-    @sales_taxes = 0.00
+    # store running totals in instance vars
+    @subtotal     = 0.00
+    @sales_taxes  = 0.00
     @import_taxes = 0.00
 
     products.each do |p|
