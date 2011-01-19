@@ -13,7 +13,7 @@ class AddCommand  < Command
 
     print "product name: " 
     product[:name] = gets.strip
-    print "product category: "
+    print "product category from following [ BOOKS | FOOD | DIGITAL_MEDIA | BEAUTY | MEDICAL ] : "
     product[:category] = gets.strip
     print "product price: $"
     product[:price] = gets.strip
